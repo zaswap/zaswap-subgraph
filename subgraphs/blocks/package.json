@@ -1,0 +1,21 @@
+{
+  "name": "blocks",
+  "description": "ZaSwap Subgraph",
+  "version": "1.0.0",
+  "repository": "git@github.com:zaswap/zaswap-subgraph.git",
+  "author": "ZaSwap",
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "codegen": "graph codegen subgraph.yaml",
+    "build": "graph build subgraph.yaml",
+    "create-local": "graph create --node http://localhost:8020/ zaswap/blocks",
+    "remove-local": "graph remove --node http://localhost:8020/ zaswap/blocks",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 zaswap/blocks"
+  },
+  "devDependencies": {
+    "@graphprotocol/graph-cli": "0.51.0",
+    "@graphprotocol/graph-ts": "0.30.0",
+    "matchstick-as": "0.5.0",
+    "assemblyscript": "0.19.10"
+  }
+}

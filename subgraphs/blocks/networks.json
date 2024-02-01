@@ -1,0 +1,62 @@
+{
+  "chapel": {
+    "WETH9": {
+      "address": "0xae13d989dac2f0debff460ac112a837c89baa7cd",
+      "startBlock": 0
+    }
+  },
+  "bsc": {
+    "WETH9": {
+      "address": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "startBlock": 0
+    }
+  },
+  "optimism": {
+    "WETH9": {
+      "address": "0x4200000000000000000000000000000000000006",
+      "startBlock": 0
+    }
+  },
+  "optimism-goerli": {
+    "WETH9": {
+      "address": "0x4200000000000000000000000000000000000006",
+      "startBlock": 0
+    }
+  },
+  "arbitrum-one": {
+    "WETH9": {
+      "address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "startBlock": 0
+    }
+  },
+  "arbitrum-goerli": {
+    "WETH9": {
+      "address": "0xe39ab88f8a4777030a534146a9ca3b52bd5d43a3",
+      "startBlock": 0
+    }
+  },
+  "goerli": {
+    "WETH9": {
+      "address": "0xb4fbf271143f4fbf7b91a5ded31805e42b2208d6",
+      "startBlock": 0
+    }
+  },
+  "mainnet": {
+    "WETH9": {
+      "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "startBlock": 0
+    }
+  },
+  "sepolia": {
+    "WETH9": {
+      "address": "0x7b79995e5f793a07bc00c21412e50ecae098e7f9",
+      "startBlock": 0
+    }
+  },
+  "x1-test": {
+    "WETH9": {
+      "address": "0x61845Bc7aAaF25F91F01e01333FF597568Eca32b",
+      "startBlock": 0
+    }
+  }
+}

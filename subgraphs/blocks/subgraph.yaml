@@ -1,0 +1,25 @@
+specVersion: 0.0.5
+description: Indexing all Ethereum Block data
+repository: https://github.com/blocklytics/ethereum-blocks
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: WETH9
+    network: x1-test
+    source:
+      abi: WETH9
+      address: "0x61845Bc7aAaF25F91F01e01333FF597568Eca32b"
+      startBlock: 0
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Block
+      abis:
+        - name: WETH9
+          file: ./abis/WETH9.json
+      blockHandlers:
+        - handler: handleBlock
+      file: ./src/blocks.ts

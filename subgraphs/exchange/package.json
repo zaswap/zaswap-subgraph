@@ -1,0 +1,22 @@
+{
+  "name": "@zaswap/subgraph-exchange",
+  "description": "ZaSwap Subgraph for Exchange",
+  "version": "1.0.0",
+  "repository": "git@github.com:zaswap/zaswap-subgraph.git",
+  "author": "ZaSwap",
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "template": "mustache ../../config/$NETWORK.js subgraph.template.yaml > subgraph.yaml && mustache ../../config/$NETWORK.js utils/constants.template.ts > utils/constants.ts && mustache ../../config/$NETWORK.js utils/pricing.template.ts > utils/pricing.ts",
+    "auth": "graph auth --product hosted-service $SUBGRAPH_KEY",
+    "codegen": "graph codegen subgraph.yaml",
+    "build": "graph build subgraph.yaml",
+    "create-local": "graph create --node http://localhost:8020/ zaswap/exchange",
+    "remove-local": "graph remove --node http://localhost:8020/ zaswap/exchange",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 zaswap/exchange"
+  },
+  "devDependencies": {
+    "mustache": "^4.2.0",
+    "@graphprotocol/graph-cli": "^0.21.0",
+    "@graphprotocol/graph-ts": "^0.20.0"
+  }
+}
