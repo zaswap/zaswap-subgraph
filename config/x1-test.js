@@ -5,7 +5,7 @@ module.exports = {
   network: "x1-test",
   wNativeAddress: "0x61845bc7aaaf25f91f01e01333ff597568eca32b", // WOKB
   v3: {
-    wNativeStablePoolAddress: "0xCe928F3B8C8f5FAe5A785d4D081A34fbfF1F45af", // WBNB USDT 250
+    wNativeStablePoolAddress: "0xce928f3b8c8f5fae5a785d4d081a34fbff1f45af", // WBNB USDT 250
     stableIsToken0: true,
     factoryAddress: "0x80348c8b23520f8b5eb37a241eff65192c7b8b20",
     startBlock: 8707659,
